@@ -47,7 +47,7 @@ client.on('message', async msg => {
         await EditPhotoHandler(text, msg);
     }
     // #ask/question?
-    if (text.includes("#ask/")) {
+    if (text.includes(".tanya")) {
         await ChatAIHandler(text, msg);
     }
 
