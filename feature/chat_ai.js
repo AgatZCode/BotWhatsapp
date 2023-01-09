@@ -3,13 +3,13 @@ const { API_KEY_OPEN_AI } = require('../config');
 
 const ChatAIHandler = async (text, msg) => {
 
-    const cmd = text.split('/');
+    const cmd = text.split('.');
 
     if (cmd.length < 2) {
-        return msg.reply('Format Salah. ketik *#ask/your question*');
+        return msg.reply('Format Salah. ketik *.Tanya your question*');
     }
 
-    msg.reply('sedang diproses, tunggu bentar ya.');
+    msg.reply('sedang diproses, Wait yaaaa.');
 
     const question = cmd[1];
     const response = await ChatGPTRequest(question)
